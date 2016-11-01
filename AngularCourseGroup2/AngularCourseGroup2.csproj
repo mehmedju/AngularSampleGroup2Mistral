@@ -94,11 +94,22 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="angular-app\css\animate.css" />
+    <Content Include="angular-app\css\style.css" />
+    <Content Include="angular-app\img\photo_bg.jpg" />
+    <Content Include="angular-app\js\home\home.html" />
+    <Content Include="angular-app\js\home\homeController.js" />
+    <Content Include="angular-app\js\login\loginController.js" />
+    <Content Include="angular-app\js\login\login.html" />
+    <Content Include="angular-app\views\tempPartialView.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="lib\angular.min.js.map" />
+    <Content Include="Scripts\angular-route.js" />
+    <Content Include="lib\angular-route.min.js" />
+    <Content Include="Scripts\angular-route.min.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -108,7 +119,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="angular-app\app.js" />
-    <Content Include="angular-app\controllers\testController.js" />
     <Content Include="index.html" />
     <Content Include="lib\angular-mocks.js" />
     <Content Include="lib\angular.js" />
@@ -119,13 +129,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="angular-app\css\" />
+    <Folder Include="angular-app\controllers\" />
     <Folder Include="angular-app\directives\" />
-    <Folder Include="angular-app\img\" />
-    <Folder Include="angular-app\js\login\" />
-    <Folder Include="angular-app\js\main\" />
     <Folder Include="angular-app\services\" />
-    <Folder Include="angular-app\views\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
