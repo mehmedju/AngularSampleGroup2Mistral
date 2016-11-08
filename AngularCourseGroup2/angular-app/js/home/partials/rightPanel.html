@@ -1,0 +1,50 @@
+﻿<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 loansModeContent rightPanel" data-ng-controller="rightPanelController">
+    <span class="modeTitle">Add new participant</span>
+    <form novalidate role="form" name="form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter a name">
+        </div>
+        <div class="form-group">
+            <label for="name">Surname:</label>
+            <input type="text" class="form-control" id="surname" name="name" placeholder="Enter a surname">
+        </div>
+       
+        <div class="form-group">
+            <label for="name">Position:</label><br/>
+            <select class="form-control">
+                <option>QA</option>
+                <option>Developer</option>
+                <option>PM</option>
+                <option>UX/UI</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="name">Team:</label><br />
+            <select class="form-control">
+                <option>ESecuritel</option>
+                <option>AT&T</option>
+                <option>NCR</option>
+                <option>LTV</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="name">Hire Date:</label>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="input-group">
+                        <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="dt" is-open="datepicker.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default" ng-click="openDatepicker()"><i class="glyphicon glyphicon-calendar"></i></button>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            </div>
+        <div class="form-group">
+            <button type="button" class="btn btn-default btn-raised">Cancel</button>
+            <button type="button" class="btn btn-primary btn-raised" ng-disabled="form.$invalid">Save</button>
+            <button type="button" class="btn btn-danger btn-raised" style="float: right">Delete</button>
+        </div>
+    </form>
+</div>

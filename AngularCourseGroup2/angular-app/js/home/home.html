@@ -1,1 +1,32 @@
-﻿<div>This is home page!!!</div>
+﻿<div data-ng-include="'angular-app/views/header.html'"></div>
+<div class="container loans">
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+            <button type="button" class="btn btn-primary btn-raised pull-right add-loan-btn">Add new participant</button>
+            <input type="text" data-ng-model="search.name" class="form-control" placeholder="Search participants..."/><br/>
+            <table class="custom-responsive-table table-striped" style="cursor: pointer">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>Position</th>
+                        <th>Team</th>
+                        <th>Hire Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-ng-repeat="participant in allParticipants | filter:search" data-ng-class="{selected2: $index+1==selectedParticipant.id}" data-ng-click="selectParticipant(participant,$index)">
+                        <td>{{participant.name}}</td>
+                        <td>{{participant.surname}}</td>
+                        <td>{{participant.position}}</td>
+                        <td>{{participant.team}}</td>
+                        <td>{{participant.hireDate | date :'mediumDate'}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div data-ng-include="'angular-app/js/home/partials/rightPanel.html'"></div>
+    </div>
+</div>
+
+

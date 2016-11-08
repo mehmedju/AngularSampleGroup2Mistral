@@ -96,18 +96,49 @@
   <ItemGroup>
     <Content Include="angular-app\css\animate.css" />
     <Content Include="angular-app\css\style.css" />
+    <Content Include="angular-app\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="angular-app\img\photo_bg.jpg" />
     <Content Include="angular-app\js\home\home.html" />
     <Content Include="angular-app\js\home\homeController.js" />
+    <Content Include="angular-app\js\home\partials\rightPanel.html" />
+    <Content Include="angular-app\js\home\partials\rightPanelController.js" />
     <Content Include="angular-app\js\login\loginController.js" />
     <Content Include="angular-app\js\login\login.html" />
-    <Content Include="angular-app\views\tempPartialView.html" />
+    <Content Include="angular-app\views\header.html" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="angular-app\css\bootstrap.min.css" />
+    <Content Include="Content\ui-bootstrap-csp.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="lib\angular.min.js.map" />
     <Content Include="lib\angular-route.min.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="angular-app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="angular-app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="angular-app\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="angular-app\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\angular-ui\ui-bootstrap-tpls.js" />
+    <Content Include="lib\ui-bootstrap-tpls.min.js" />
+    <Content Include="Scripts\angular-ui\ui-bootstrap.js" />
+    <Content Include="Scripts\angular-ui\ui-bootstrap.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="lib\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="lib\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
