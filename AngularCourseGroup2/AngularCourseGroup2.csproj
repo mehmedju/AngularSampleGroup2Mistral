@@ -105,6 +105,7 @@
     <Content Include="angular-app\js\home\partials\rightPanelController.js" />
     <Content Include="angular-app\js\login\loginController.js" />
     <Content Include="angular-app\js\login\login.html" />
+    <Content Include="angular-app\services\commonService.js" />
     <Content Include="angular-app\services\dataService.js" />
     <Content Include="angular-app\views\header.html" />
     <Content Include="Content\bootstrap-theme.css" />
