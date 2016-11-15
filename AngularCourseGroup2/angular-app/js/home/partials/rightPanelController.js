@@ -1,6 +1,13 @@
 ﻿angular.module('app')
-    .controller('rightPanelController', ['$scope', function ($scope) {
+    .controller('rightPanelController', ['$scope', 'commonService', function ($scope, commonService) {
         'use strict';
+
+        $scope.positions = commonService.getPositions();
+        $scope.teams = commonService.getTeams();
+
+        $scope.save = function (newParticipant) {
+            $scope.allParticipants.push(newParticipant);
+        }
 
         $scope.dateOptions = {
             formatYear: 'yy',

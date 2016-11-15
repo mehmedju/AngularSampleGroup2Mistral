@@ -31,9 +31,12 @@
     <script src="angular-app/js/home/homeController.js"></script>
     <script src="angular-app/js/home/partials/rightPanelController.js"></script>
     <script src="angular-app/controllers/mainController.js"></script>
+
+    <script src="angular-app/services/dataService.js"></script>
+    <script src="angular-app/services/commonService.js"></script>
 </head>
 
-<body data-ng-class="{bgImage:getCurentPath()=='/login'}" data-ng-controller="mainController">
-    <div ng-view=""></div>
+<body data-ng-controller="mainController" data-ng-class="{bgImage:getCurentPath()=='/login'}">
+    <ng-view></ng-view>
 </body>
 </html>

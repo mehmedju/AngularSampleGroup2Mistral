@@ -3,29 +3,23 @@
     <form novalidate role="form" name="form">
         <div class="form-group">
             <label for="name">Name:</label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="Enter a name">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter a name" data-ng-model="participant.name">
         </div>
         <div class="form-group">
             <label for="name">Surname:</label>
-            <input type="text" class="form-control" id="surname" name="name" placeholder="Enter a surname">
+            <input type="text" class="form-control" id="surname" name="name" placeholder="Enter a surname" data-ng-model="participant.surname">
         </div>
        
         <div class="form-group">
             <label for="name">Position:</label><br/>
-            <select class="form-control">
-                <option>QA</option>
-                <option>Developer</option>
-                <option>PM</option>
-                <option>UX/UI</option>
+            <select class="form-control" data-ng-model="participant.position">
+                <option data-ng-repeat="item in positions">{{item}}</option>
             </select>
         </div>
         <div class="form-group">
             <label for="name">Team:</label><br />
-            <select class="form-control">
-                <option>ESecuritel</option>
-                <option>AT&T</option>
-                <option>NCR</option>
-                <option>LTV</option>
+            <select class="form-control" data-ng-model="participant.team">
+                <option data-ng-repeat="item in teams">{{item}}</option>
             </select>
         </div>
         <div class="form-group">
@@ -33,7 +27,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <p class="input-group">
-                        <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="dt" is-open="datepicker.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
+                        <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="participant.hireDate" is-open="datepicker.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
                         <span class="input-group-btn">
                             <button type="button" class="btn btn-default" ng-click="openDatepicker()"><i class="glyphicon glyphicon-calendar"></i></button>
                         </span>
@@ -43,7 +37,7 @@
             </div>
         <div class="form-group">
             <button type="button" class="btn btn-default btn-raised">Cancel</button>
-            <button type="button" class="btn btn-primary btn-raised" ng-disabled="form.$invalid">Save</button>
+            <button type="button" class="btn btn-primary btn-raised" data-ng-click="save(participant)">Save</button>
             <button type="button" class="btn btn-danger btn-raised" style="float: right">Delete</button>
         </div>
     </form>

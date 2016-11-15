@@ -1,0 +1,34 @@
+﻿[
+  {
+    "id": 1,
+    "name": "ZinajdaDDDD",
+    "surname": "Sarac",
+    "position": "QA",
+    "team": "ESecuritel",
+    "hireDate": "2011-11-27"
+  },
+  {
+    "id": 2,
+    "name": "Enes",
+    "surname": "Kuhn",
+    "position": "QA",
+    "team": "ESecuritel",
+    "hireDate": "2014-03-09"
+  },
+  {
+    "id": 3,
+    "name": "Ammar",
+    "surname": "Kevilj",
+    "position": "QA",
+    "team": "ESecuritel",
+    "hireDate": "2011-06-11"
+  },
+  {
+    "id": 4,
+    "name": "Dzenan",
+    "surname": "Dizdarevic",
+    "position": "QA",
+    "team": "AT&T",
+    "hireDate": "2010-07-14"
+  }
+]
