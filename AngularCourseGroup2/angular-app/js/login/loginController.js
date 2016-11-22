@@ -8,7 +8,7 @@
         }
 
         $scope.signIn = function () {
-            if ($scope.user.username == credentials.username && $scope.user.password == credentials.password) {
+            if ($scope.user.username === credentials.username && $scope.user.password === credentials.password) {
                 $location.path('/home');
             } else {
                 alert('Wrong credentials');

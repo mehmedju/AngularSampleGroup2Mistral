@@ -107,6 +107,7 @@
     <Content Include="angular-app\js\login\login.html" />
     <Content Include="angular-app\services\commonService.js" />
     <Content Include="angular-app\services\dataService.js" />
+    <Content Include="angular-app\test\login\loginControllerTests.js" />
     <Content Include="angular-app\views\header.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -114,6 +115,10 @@
     <Content Include="angular-app\css\bootstrap.min.css" />
     <Content Include="Content\ui-bootstrap-csp.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="lib\boot.js" />
+    <Content Include="lib\jasmine-html.js" />
+    <Content Include="lib\jasmine.css" />
+    <Content Include="lib\jasmine.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -156,6 +161,7 @@
     <Content Include="lib\angular-mocks.js" />
     <Content Include="lib\angular.js" />
     <Content Include="lib\angular.min.js" />
+    <Content Include="specRunner.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

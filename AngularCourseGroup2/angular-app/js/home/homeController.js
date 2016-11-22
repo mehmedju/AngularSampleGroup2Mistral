@@ -11,5 +11,6 @@
         dataService.get().then(function (responseData) {
             $scope.allParticipants = responseData;
         });
+
     }
     ]);
